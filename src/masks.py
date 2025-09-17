@@ -14,7 +14,7 @@ def get_mask_card_number(card_number: str = "0000000000000000") -> str:
 
 def get_mask_account(account_number: str = "00000000000000000000") -> str:
     """Функция принимает на вход номер счета (строка из 20 цифр без пробелов) и
-    возвращает его маску в формате '**XXXX'"""
+    возвращает его маску в формате '**XXXX' """
     if account_number.isdigit() and len(account_number) == 20:
         mask_account_number = "**" + account_number[-4:]
     else:
